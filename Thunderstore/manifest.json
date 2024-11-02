@@ -4,7 +4,7 @@
     "website_url": "https://github.com/lolieg/CruiserVolumeControl",
     "description": "Super simple mod to control the radio volume of the cruiser using LethalConfig",
     "dependencies": [
-        "LethalConfig-1.4.3",
+        "AinaVT-LethalConfig-1.4.3",
         "BepInEx-BepInExPack-5.4.2100"
     ]
 }
