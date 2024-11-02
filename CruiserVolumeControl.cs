@@ -27,7 +27,7 @@ public class CruiserVolumeControl : BaseUnityPlugin
         Logger = base.Logger;
         Instance = this;
 
-        cruiserVolumeConfigEntry = Config.Bind("Volume", "Cruiser Volume", 0.3f, "Set the volume of the Cruiser's Radio");
+        cruiserVolumeConfigEntry = Config.Bind("Volume (Fick dich Florian)", "Cruiser Volume", 0.3f, "Set the volume of the Cruiser's Radio");
 
         var volumeSlider = new FloatSliderConfigItem(cruiserVolumeConfigEntry, new FloatSliderOptions
         {
