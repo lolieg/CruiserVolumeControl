@@ -1,8 +1,7 @@
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
-using LobbyCompatibility.Attributes;
-using LobbyCompatibility.Enums;
+
 using LethalConfig;
 using LethalConfig.ConfigItems;
 using LethalConfig.ConfigItems.Options;
@@ -12,9 +11,7 @@ using BepInEx.Configuration;
 namespace CruiserVolumeControl;
 
 [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
-[BepInDependency("BMX.LobbyCompatibility", BepInDependency.DependencyFlags.HardDependency)]
 [BepInDependency("ainavt.lc.lethalconfig")]
-[LobbyCompatibility(CompatibilityLevel.ClientOnly, VersionStrictness.None)]
 public class CruiserVolumeControl : BaseUnityPlugin
 {
     public static CruiserVolumeControl Instance { get; private set; } = null!;
